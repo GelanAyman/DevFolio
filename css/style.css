@@ -1,0 +1,277 @@
+/* ! ==========> vars */
+:root {
+    --main-color: #0077FD;
+}
+.text-main {
+    color: var(--main-color);
+}
+.bg-main {
+    background-color: var(--main-color);
+}
+/* ! =============== */
+
+/* ~ ==========> general */
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #F5F5F5;
+}
+.blue-line {
+    width: 50px;
+    height: 5px;
+    background-color: var(--main-color);
+    margin: 2px auto;
+}
+.img {
+    max-width: 100%;
+}
+a {
+    color: inherit;
+}
+/* ~ ================== */
+
+/* ? ==========> navbar */
+.navbar .dropdown .dropdown-item:hover {
+    color: var(--main-color);
+    background-color: transparent;
+}
+.navbar .collapse .navbar-nav .nav-link {
+    position: relative;
+}
+.navbar .collapse .navbar-nav .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    left: 5px;
+    bottom: -5px;
+    transition: 700ms;
+}
+.navbar .collapse .navbar-nav .nav-link:hover::before{
+    width: 80%;
+}
+
+/* .navbar .collapse .navbar-nav .active::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    left: 5px;
+    bottom: -5px;
+    width: 80%;
+} */
+
+
+/* ? ================= */
+
+
+/* ~ =======> home */
+.home {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.home .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.home h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+/* ~ ============ */
+
+/* * =======> about */
+.progress-bar-85 {
+    width: 85%;
+}
+.progress-bar-90 {
+    width: 90%;
+}
+.progress {
+    --bs-border-radius: 0;
+}
+.info-card img {
+    border-radius: 5px;
+}
+.about .about-me h2:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--main-color);
+    margin-top: 16px;
+    border-radius: 2px;
+}
+/* * ============= */
+
+/* ^ =======> services */
+.services .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    transition: border 0.5s ease, background-color 0.5s ease;
+}
+.services .icon i {
+    font-size: 40px;
+    transition: color 0.5s ease;
+}
+.services .card:hover i {
+    color: #fff;
+}
+.services .card:hover .icon {
+    background-color: var(--main-color);
+    border: 10px solid #cde1f8;
+}
+/* ^ ================ */
+
+/* & =======> section overlay */
+.section {
+    background-image: linear-gradient(rgba(0, 119, 253, 0.7), rgba(0, 119, 253, 0.7)), url("../images/post-3.jpg");
+    background-attachment: fixed;
+    position: relative;
+}
+.section .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid #cde1f8;
+}
+.section .icon i {
+    font-size: 30px;;
+}
+.section .py-5 {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+/* & ======================= */
+
+/* ! =======> portfolio */
+.portfolio .card p {
+    color: var(--main-color);
+    font-size: 12px;
+}
+.portfolio .card span {
+    color: #4e4e4e;
+    font-size: 12px;
+}
+.portfolio .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+}
+.portfolio .icon i {
+    font-size: 20px;
+    color: var(--main-color);
+}
+.portfolio .card-img {
+    overflow: hidden;
+}
+.portfolio .card img {
+    transition: transform 1s ease;
+}
+.portfolio .card:hover img {
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+/* ! ================= */
+
+
+/* * =======> section carsoul */
+.section-carousel {
+    background-image: linear-gradient(rgba(0, 119, 253, 0.7), rgba(0, 119, 253, 0.7)), url("../images/overlay-bg.jpg");
+    background-attachment: fixed;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+
+
+/* * ======================= */
+
+
+.blog .name img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.blog .card-img {
+    position: relative;
+}
+.blog .badge {
+    position: absolute;
+    bottom: -13px;
+    left: 38%;
+}
+.blog .card .card-body a:hover,
+.blog .card .card-footer .name:hover a {
+    color: var(--main-color) !important;
+    cursor: pointer;
+    transition: color 1s ease;
+}
+.blog .card a {
+    transition: color 1s ease;
+}
+
+
+/* & =======> contact */
+.contact {
+    background-image: linear-gradient(rgba(0, 119, 253, 0.7), rgba(0, 119, 253, 0.7)), url("../images/overlay-bg.jpg");
+    background-attachment: fixed;
+}
+.contact .btn {
+    border-radius: 24px;
+    padding: 10px 20px;
+}
+.contact .social i {
+    border: 5px solid var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.contact h2 {
+    position: relative;
+}
+.contact h2::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background-color: var(--main-color);
+    bottom: -12px;
+    left: 0;
+}
+.contact .social i:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    border: 5px solid #cde1f8;
+    cursor: pointer;
+}
+
+
+/* ^ =======> footer */
+.footer {
+    background-color: #0062D3;
+}
+
+
+.typed-cursor {
+    font-size: inherit;   /* match parent font size */
+    display: inline;      /* keep it on the same line */
+    vertical-align: baseline; /* align with text */
+  }
